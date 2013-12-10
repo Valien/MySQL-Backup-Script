@@ -37,6 +37,9 @@ upgrade_config_file () {
     echo ""
     echo "# Basic Settings"
     echo ""
+    echo "# Allow mysqldump/mysql to use an account's .my.cnf to specify credentials"
+    echo "#CONFIG_mysql_dump_use_mycnf_for_userpass='no'"
+    echo ""
     echo "# Username to access the MySQL server e.g. dbuser"
     if isSet USERNAME; then
       printf '%s=%q\n' CONFIG_mysql_dump_username "${USERNAME-}"
