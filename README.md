@@ -1,5 +1,4 @@
-MySQL-Backup-Script
-===================
+##MySQL-Backup-Script
 
 This is forked off the AutoMySQLBackup.sh program hosted here - http://sourceforge.net/projects/automysqlbackup/
 
@@ -7,8 +6,7 @@ This is the latest version that is posted on Sourceforge - v3.0_rc6.
 
 I will be updating and fixing this as needed and posting all the code here for the world to use!
 
-SCRIPT INFORMATION (Original README)
-====================================
+##SCRIPT INFORMATION (Original README)
 
 ###AutomysqlBackup
 
@@ -57,9 +55,9 @@ Automysqlbackup can be run a number of ways, you can choose which is best for yo
 
         ==Copy From Below Here==
         #!/bin/sh
-        
+
         /usr/local/bin/automysqlbackup /etc/automysqlbackup/myserver.conf
-        
+
         chown root.root /var/backup/db* -R
         find /var/backup/db* -type f -exec chmod 400 {} \;
         find /var/backup/db* -type d -exec chmod 700 {} \;
