@@ -70,6 +70,8 @@ The backup can be run from the command line simply by running the following comm
 
   `automysqlbackup /etc/automysqlbackup/myserver.conf`
 
+Note: You can do a dry run to test your configuration by uncommenting `#CONFIG_dryrun=1` at the bottom of the `myserver.conf` file. Look for error messages. Ones to look for are the missing directories (you will need to manually create them first).
+
 If you don't supply an argument for automysqlbackup, the default configuration
 in the program automysqlbackup will be used unless a global file
 
